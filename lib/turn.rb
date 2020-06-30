@@ -28,6 +28,13 @@ def move(board, index, current_player)
   board[index] = current_player
 end
 
+def current_player(board)
+  if (turn_count(board).even? == true)
+    return "X"
+  else
+    return "O"
+  end
+end
 
 def turn(board)
 puts "Please enter 1-9:"
