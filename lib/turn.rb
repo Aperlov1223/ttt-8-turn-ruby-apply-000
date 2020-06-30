@@ -24,8 +24,8 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, position, first_player = "X")
-  board[position] = first_player
+def move(board, position, current_player = "X")
+  board[position] = current_player
 end
 
 
