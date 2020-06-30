@@ -36,7 +36,7 @@ puts "Please enter 1-9:"
   index = input_to_index(input)
 
   if valid_move?(board, index)
-    move(board, position, first_player)
+    move(board, position, first_player(board))
     display_board
   else
     puts "Please enter 1-9:"
