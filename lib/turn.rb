@@ -51,6 +51,8 @@ end
 def turn(board)
 puts "Please enter 1-9:"
 if turn_count(board).even? == true
+end
+
   input = gets.strip
   index = input_to_index(input)
 if valid_move?(board, index)
